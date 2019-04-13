@@ -10,7 +10,7 @@ RSpec.feature "Bookに関するテスト", type: :feature do
     visit root_path
     expect(page).to have_link "", href: books_path
   end
-  feature "bookの一覧ページの表示とリンク" do
+  feature "bookの一覧ページの表示とリンクは正しいか" do
     before do
       visit books_path
     end
@@ -28,7 +28,7 @@ RSpec.feature "Bookに関するテスト", type: :feature do
       end
     end
   end
-  feature "bookの詳細ページへの表示内容とリンク" do
+  feature "bookの詳細ページへの表示内容とリンクは正しいか" do
     given(:book) {Book.first}
     before do
       visit book_path(book)
