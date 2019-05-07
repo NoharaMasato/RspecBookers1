@@ -7,11 +7,5 @@ RSpec.describe Book, "モデルに関するテスト", type: :model do
     it "有効な投稿内容の場合は保存されるか" do
       expect(FactoryBot.build(:book)).to be_valid
     end
-    it "titleが空欄の場合は保存されないか" do
-      expect(FactoryBot.build(:book, :no_title)).to_not be_valid
-    end
-    it "bodyが空欄の場合は保存されないか" do
-      expect(FactoryBot.build(:book, :no_body)).to_not be_valid
-    end
   end
 end
