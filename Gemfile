@@ -35,7 +35,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 group :production do
   #for heroku
-  gem 'pg'
 end
 
 group :development, :test do

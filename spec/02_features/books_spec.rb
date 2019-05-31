@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Bookに関するテスト", type: :feature do
+RSpec.feature "動作に関するテスト", type: :feature do
   before do
     2.times do
       FactoryBot.create(:book)
